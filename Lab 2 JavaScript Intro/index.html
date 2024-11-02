@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>CIT 3606 Lab 2 JS Intro</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script>
+            var today= new Date();
+            hours = today.getHours();
+            // hours = Math.floor(Math.random() * 23);
+            greeting = "";
+            if(hours < 12 && hours !=0)
+            {
+                greeting = "Good morning!";
+            }
+            else if(hours >=12 && hours <18)
+            {
+                greeting = "Good afternoon!";
+            }
+            else
+            {
+                greeting = "Good evening!";
+            }
+            // alert(hours+" " +greeting);
+            //https://www.tutorialstonight.com/javascript-number-format
+            alert(greeting);
+            dollars = prompt("Amount of dollars to convert into canadian dollars");
+            conversion_rate = 1.36 ;
+            alert(dollars +" dollars becomes "+ (conversion_rate * dollars).toFixed(2) + " canadian dollars")
+        </script>
+    </head>
+    <body>
+      
+      
+
+        
+    </body>
+</html>

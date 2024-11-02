@@ -1,0 +1,29 @@
+body {
+    color: black;
+    background-color: orange;
+
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+header, main, footer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+} 
+
+header{
+    background-color: yellow;
+    color: red;
+}
+main{
+    background-color: red;
+    color: yellow;
+}
+footer{
+    background-color: orangered;
+    color: blue;
+}

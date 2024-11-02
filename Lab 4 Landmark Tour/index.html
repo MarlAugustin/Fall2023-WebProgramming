@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>CIT 3606 Lab 4</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body onload="onLoadingPage()">
+      <h1>World renown landmark Tour</h1>
+      <input type="radio" name="landmark" value="citadel" onclick="swapImage(this)" checked="checked"> Citadelle Laferrière<br>
+      <input type="radio" name="landmark" value="niagara" onclick="swapImage(this)"> Niagara Falls<br>
+      <input type="radio" name="landmark" value="wall_of_china" onclick="swapImage(this)"> Wall of China<br>
+      <input type="radio" name="landmark" value="pyramid_of_giza" onclick="swapImage(this)"> Pyramids of Gyza
+      <h2>Select a desired size for the landmarks</h2>
+      <select id="size_menu"  onchange="updateImageSize()">
+        <option >Size</option>
+        <option value="25" >Small</option>
+        <option value="50">Medium</option>
+        <option value="75">Large</option>
+      </select>
+      </br>
+      <div>
+        Directions from: <input id="directions_from" type="text"> <button id="button" type="button" onclick="directions()">Enter</button>
+        <a id="landmark_directions"></a>
+      </div>
+       <div class="block">
+        <img id="current_img" alt="Landmark" width="50%" height="50%" onmouseover="onImageMouseOver()" onmouseout="onImageMouseOut()">
+        <iframe id="landmark_location" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="current_img_description"></div>
+      </div>
+     
+     <!-- The JavaScript code is attached at the bottom of the page
+           after the page is completely loaded. Write your code in script.js. -->
+     <script src="script.js"></script> 
+    </body>
+</html>
